@@ -1,19 +1,16 @@
 package main
 
 import (
-	"net/http"
-
+	"example.com/rest-api/db"
+	"example.com/rest-api/routes"
 	"github.com/gin-gonic/gin"
 )
 
 func main() {
+	db.InitDB()
 	server := gin.Default()
 
-	server.GET("/events", getEvents) // GET, POST, PUT,  PATCH, DELETE
+	routes.RegisterRoutes(server)
 
 	server.Run(":8080") // localhost:8080
-}
-
-func getEvents(context *gin.Context) {
-	context.JSON(http.StatusOK, gin.H{"message": "Hello!"})
 }
