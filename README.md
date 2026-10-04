@@ -128,23 +128,3 @@ The project includes sample API requests in the `api-test/` folder. These files 
 ## Notes
 
 This project is a simple backend API for learning and practicing Go, REST API design, JWT authentication, and SQLite integration.
-
-## Suggested Repository Name
-
-A strong repo name for this project would be:
-
-```text
-go-event-manager-api
-```
-
-Alternative options:
-
-- `eventhub-api`
-- `go-event-api`
-- `event-management-api`
-
-## Suggested Repository Description
-
-```text
-A Go + Gin REST API for managing users, events, and registrations with JWT authentication and SQLite persistence.
-```
